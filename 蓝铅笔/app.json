@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/school/school",
+    "pages/course/course",
+    "pages/index/index",
+    
+    "pages/trigg/trigg",
+    "pages/mine/mine"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#878787",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/image/nav-h01.jpg",
+      "selectedIconPath": "/image/nav-h02.jpg"
+    },
+    {
+      "pagePath": "pages/course/course",
+      "text": "教程",
+      "iconPath": "/image/nav-c01.jpg",
+      "selectedIconPath": "/image/nav-c02.jpg"
+    },
+    {
+      "pagePath": "pages/school/school",
+      "text": "网校",
+      "iconPath": "/image/nav-t01.jpg",
+      "selectedIconPath": "/image/nav-t02.jpg"
+    },
+    {
+      "pagePath": "pages/trigg/trigg",
+      "text": "大触",
+      "iconPath": "/image/nav-d01.png",
+      "selectedIconPath": "/image/nav-d02.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "/image/nav-ucenter01.jpg",
+      "selectedIconPath": "/image/nav-ucenter02.jpg"
+    }
+
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

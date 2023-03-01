@@ -1,0 +1,60 @@
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: 'iconfont';  /* Project id 3900408 */
+  src: url('//at.alicdn.com/t/c/font_3900408_ohb3zalg6h.woff2?t=1676895156456') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3900408_ohb3zalg6h.woff?t=1676895156456') format('woff'),
+       url('//at.alicdn.com/t/c/font_3900408_ohb3zalg6h.ttf?t=1676895156456') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-31sousuo:before {
+  content: "\e600";
+}
+
+.icon-yanjing:before {
+  content: "\e661";
+}
+
+.icon-biji:before {
+  content: "\e60d";
+}
+
+.icon-shouye:before {
+  content: "\e6cb";
+}
+
+.icon-diannao:before {
+  content: "\e603";
+}
+
+.icon-yonghuming:before {
+  content: "\e708";
+}
+
+.icon-bijiben:before {
+  content: "\e650";
+}
+
+.icon-shouye1:before {
+  content: "\e66f";
+}
+
+.icon-diannao1:before {
+  content: "\e601";
+}
+
+.icon-yanjing-:before {
+  content: "\e65c";
+}
+
+.icon-jurassic_user:before {
+  content: "\e6a4";
+}
+

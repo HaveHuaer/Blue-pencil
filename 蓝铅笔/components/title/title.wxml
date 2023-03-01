@@ -1,0 +1,32 @@
+<view class="heard">
+  <view class="title_bar">
+    <view class="logo_title">
+      <image class="logo_img" src="../../image/logo05.png" mode="" />
+    </view>
+
+    <view class="year_img">
+      <image class="year" src="../../image/2023year.png" mode="" />
+    </view>
+
+    <view class="small_view">
+      <swiper autoplay interval="{{2000}}" vertical="{{true}}">
+        <swiper-item class="text_swiper">
+          <view class="login">登录</view>
+          <view class="regist"> 注册</view>
+        </swiper-item>
+        <swiper-item class="img_swiper">
+          <image src="../../image/regster-reward_3.png" mode="" />
+        </swiper-item>
+      </swiper>
+    </view>
+
+
+  </view>
+  <view class="logo_index">
+    <image src="../../image/m-ht.png" mode="" />
+    <view class="lingqu"></view>
+  </view>
+</view>
+<view class="box_pos">
+
+</view>

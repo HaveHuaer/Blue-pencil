@@ -1,0 +1,194 @@
+<view class="all">
+  <title></title>
+  <!-- 轮播图 -->
+  <swiper circular="{{true}}" autoplay="{{true}}" indicator-active-color="#FFFFFf" indicator-dots autoplay interval="{{2000}}" class="img_swiper">
+    <swiper-item class="img_item" wx:for="{{swiper_img}}" wx:key="index">
+      <image src="https://ss.lanqb.com/{{item.picture}}" mode="" />
+      {{item.picture}}
+    </swiper-item>
+  </swiper>
+
+  <!-- 八个按钮 -->
+  <view class="but_list">
+    <view class="text_box" wx:for="{{text_list}}" wx:key="index">
+      <view class="item_box">
+        <image class="image_item" src="{{item.img}}" mode="" />
+
+      </view>
+      <view class="text_item">{{item.text}}</view>
+    </view>
+  </view>
+
+  <!-- 灰色横杠 -->
+  <view class="Horizontal"></view>
+
+  <!-- 大触直播 -->
+  <view class="live">
+    <view class="big_live">
+      <text class="da">大触直播</text>
+      <text class="more">查看更多></text>
+    </view>
+    <view class="text_content">
+      <view class="const_item">
+        <view class="const_text">
+          <view class="text_img">
+            <image src="{{dachu_name&&'https://ss.lanqb.com/' + dachu_name[0].profile.avatar}}" mode="" />
+          </view>
+          <view class="text_name">{{dachu_name[0].profile.nickname}}</view>
+        </view>
+
+        <view class="text_long">{{dachu_name[0].production.title}}</view>
+
+      </view>
+
+      <view class="courses_item_All">
+        <view class="courses_item" wx:for="{{dcTwo_name}}" wx:key="index" wx:if="{{index !== 2}}">
+          <view class="const_text">
+            <view class="text_img">
+              <image src="{{dachu_name&&'https://ss.lanqb.com/' + item.user_profile.avatar}}" mode="" />
+            </view>
+            <view class="text_name">{{item.user_profile.nickname}}</view>
+          </view>
+          <view class="text_longs">{{item.title}}</view>
+          <view class="img_box_dachu">
+            <image src="https://ss.lanqb.com/{{item.posters.app}}" mode="" />
+            <view class="mode_num">
+              第{{item.periods}}期
+            </view>
+          </view>
+          <view class="time_box">
+            <view>
+              时间:{{item.begin_at}}
+            </view>
+            <view>
+              ♥{{item.statistic.purchases}}
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="Horizontal"></view>
+
+  <!-- 热门教程 -->
+  <view class="live">
+    <view class="big_live">
+      <text class="da">热门教程</text>
+      <text class="more">查看更多></text>
+    </view>
+    <view class="recommend">
+      <view class="recommend_img" wx:for="{{tuijian}}" wx:key="index" wx:if="{{index < 4 }}">
+        <view class="image_box">
+          <image src="https://ss.lanqb.com/{{item.posters.app}}" alt="" />
+        </view>
+        <view class="title_tj">
+          {{item.title}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="Horizontal"></view>
+
+  <!-- 回答专区 -->
+  <view class="live">
+    <view class="big_live">
+      <text class="da">回答专区</text>
+      <text class="more">查看更多></text>
+    </view>
+    <view class="answer" wx:for="{{answer}}" wx:key="index" wx:if="{{index < 3}}">
+      <view class="answer_box">
+        <view class="answer_hear">
+          <view class="answer_img">
+            <image src="{{item.user_avatar}}" mode="" />
+          </view>
+          <view class="answer_text">
+            {{item.user_nickname}}
+          </view>
+        </view>
+
+        <view class="wenda">
+          <view class="two_wen">
+            <view class="wen">问</view>
+            <view class="text_answ">
+              {{item.title}}
+            </view>
+          </view>
+
+          <view class="three_wen">
+            <view class="left">{{item.content}}</view>
+            <image src="{{item.works[0]}}" mode="" />
+          </view>
+
+          <view class="four_wen">
+            <view class="teacher-info">
+              <image src="{{item.answer_user_avatar}}" mode="" />
+              <view class="answ_name"> {{item.answer_user_nickname}}</view>
+              <view class="caina"> 已采纳</view>
+            </view>
+
+            <view class="jianyi">{{item.answer_content[0].value}} <view class="app"> APP内查看</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="Horizontal"></view>
+
+  <!-- 素材下载 -->
+  <view class="live">
+    <view class="big_live">
+      <text class="da">素材下载</text>
+      <text class="more">查看更多></text>
+    </view>
+
+    <view class="source" wx:for="{{sucai}}" wx:key="index" wx:if="{{index<3}}">
+      <view class="source_box">
+        <view class="source_item">
+          <view class="source_img">
+            <image src="https://ss.lanqb.com/{{item.imgCover}}" mode="" />
+          </view>
+          <view class="source_text">
+            <view class="source_texts">
+              {{item.title}}
+            </view>
+            <view class="source_timeime">
+              2022年11月28日
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 关于蓝铅笔 -->
+  <view class="about_blue">
+    <view class="about_tite">
+      |关于蓝铅笔|
+    </view>
+    <view class="about_logo">
+      <view class="iamge_about" wx:for="{{logo_img}}" wx:key="index">
+        <image src="{{item.img}}" mode="" />
+      </view>
+      
+    </view>
+    <view class="beian">
+      <view class="beian_one"> Copyright © 2022杭州多技教育科技有限公司</view>
+      <view class="beian_two"> 浙ICP备11056181号</view>
+      
+    </view>
+    <view class="about_biz">
+        <view class="imag_bz">
+           <image src="../../image/footer-icon4@2x.png" mode="" />
+        </view>
+       
+        浙公网安备33010602000717号
+    
+      </view>
+  </view>
+</view>

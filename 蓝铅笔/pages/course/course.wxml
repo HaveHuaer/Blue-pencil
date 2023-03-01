@@ -1,0 +1,65 @@
+<view>
+  <title></title>
+  <!-- 顶部导航 -->
+  <view class="title_list">
+    <swiper display-multiple-items="6" class="img_swiper">
+      <swiper-item bindtap="itemClick" data-index="{{index}}" wx:for="{{titleList}}" wx:key="index" class="itemColor{{idnexColor == index? 'add' : ''}}">
+        {{item}}
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 导航下总内容 -->
+  <view class="nav_all">
+    <!-- 导航下内容==输入框 -->
+    <view class="nav_ipt">
+      <view class="icon iconfont icon-31sousuo"></view>
+      <form class="nav_form" bindsubmit="">
+        <input model:value="{{title}}" bindinput="TitleChange" type="text" placeholder="绘画教程" />
+      </form>
+    </view>
+    <!-- 导航下内容==logo -->
+    <view class="nav_logo">
+      <image src="{{logoImg&&'https://ss.lanqb.com/' +logoImg}}" mode="" />
+    </view>
+    <!-- 导航下内容==选择按钮 -->
+    <view class="nav_change">
+      <view class="box_change{{isTrue? 'adHeight ' : ''}}">
+        <view class="box_item{{itemIndex == 0 ? 'change_bg ' : ' '}}" bindtap="allIndex" data-index="0">
+          全部
+        </view>
+        <view class="box_item{{itemIndex == index+1 ? 'change_bg ' : ' '}}" wx:for="{{itemText}}" wx:key="index" data-index="{{index + 1}}" bindtap="indexClick" data-id="{{item.id}}">
+          {{item.name}}
+        </view>
+      </view>
+      <view bindtap="AddHeight" class="more_cahnge">
+        更多筛选
+        <text class="true_fuhao" style="display: inline-block; transform:rotate{{isTrue? '(180deg)' : '(0deg)'}};">∨</text>
+      </view>
+    </view>
+    <!-- 导航下内容==列表数据-->
+    <view class="nav_list">
+      <view class="list_box" wx:for="{{list}}" wx:key="index">
+        <view class="image_box">
+          <image src="https://ss.lanqb.com/{{item.posters.app}}" mode="" />
+        </view>
+        <view class="text_box">
+          <view class="text_tit">{{item.title}}</view>
+          <view class="text_name">
+            <view class="text_all">
+              <image src="https://ss.lanqb.com/{{item.profile.avatar}}" mode="" />
+              <view class="names">{{item.profile.nickname}}</view>
+            </view>
+            <view class="class_num">共{{item.preview_setting.lessons_count}}节</view>
+          </view>
+          <view class="text_foot">
+            <view class="learn_num">{{item.statistic.pv}}人在学</view>
+            <view class="money">
+              <view class="money_box">￥{{item.production.origin_rmb_price}}</view>
+              <view class="fenx"> 分享半价学</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,86 @@
+{
+  "id": "3900408",
+  "name": "蓝铅笔",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "201571",
+      "name": "3.1-搜索",
+      "font_class": "31sousuo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "630126",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "648756",
+      "name": "笔记",
+      "font_class": "biji",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "673799",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "2571124",
+      "name": "电脑",
+      "font_class": "diannao",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "3814441",
+      "name": "用户名",
+      "font_class": "yonghuming",
+      "unicode": "e708",
+      "unicode_decimal": 59144
+    },
+    {
+      "icon_id": "4165999",
+      "name": "笔记本",
+      "font_class": "bijiben",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "4421933",
+      "name": "首页",
+      "font_class": "shouye1",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "6850406",
+      "name": "电脑",
+      "font_class": "diannao1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "7081780",
+      "name": "眼睛",
+      "font_class": "yanjing-",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "10593835",
+      "name": "用户-角色-用户名-单人_jurassic",
+      "font_class": "jurassic_user",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    }
+  ]
+}

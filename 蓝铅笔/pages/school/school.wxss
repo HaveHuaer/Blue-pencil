@@ -1,0 +1,286 @@
+.all {
+  width: 100%;
+  height: 100vh;
+}
+
+.d_imgBox {
+  width: 100%;
+  height: 350rpx;
+  background-image: url("https://assets-cdn.lanqb.com/imgv3_m/shome2211/shb-bg.png");
+  background-size: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.d_imgBoxOne {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item {
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.d_imgBoxTwo {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-items {
+  width: 45%;
+  height: 100%;
+
+}
+
+.card-items image {
+  width: 100%;
+  height: 100%;
+}
+
+.but_lists {
+  width: 100%;
+  margin-top: 25rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.text_boxs {
+  width: 180rpx;
+  height: 180rpx;
+  margin-bottom: 20rpx;
+}
+
+.item_boxs {
+  margin: 0 auto;
+  margin-top: 10rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.item_boxs .image_item,
+.item_boxs .img_big {
+  width: 100%;
+  height: 100%;
+}
+
+.text_item {
+  /* width: 100%; */
+  padding: 0rpx 1rpx;
+  color: #222;
+  font-family: 楷体;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hot_tuijian {
+  width: 100%;
+  padding: 30rpx 15px;
+  box-sizing: border-box;
+}
+
+.hot_oneBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_box {
+  width: 50%;
+  height: 450rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.right_box {
+  width: 46%;
+  height: 450rpx;
+}
+
+.img_swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.img_item image {
+  width: 100%;
+  height: 100%;
+}
+
+.right_tit {
+  width: 70%;
+  height: 70rpx;
+  display: flex;
+  margin-bottom: 10rpx;
+}
+
+.right_tit image {
+  margin-top: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.hot_tuj {
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 35rpx;
+  margin-left: 10rpx;
+}
+
+.cont {
+  width: 95%;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 25rpx;
+  text-align: left;
+  background-color: #f6f8fa;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  padding-left: 20rpx;
+  color: #87959f;
+  border-radius: 10rpx;
+}
+
+.hot_twoBox {
+  margin-top: 30rpx;
+  width: 100%;
+}
+
+.tit_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.more {
+  line-height: 70rpx;
+  color: #a4a4a4;
+}
+
+.course-list {
+  margin-top: 40rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.course-listBox {
+  width: 48%;
+  height: 400rpx;
+  margin-bottom: 35rpx;
+}
+
+.img_boxImg {
+  width: 100%;
+  height: 250rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+
+.img_boxImg image {
+  width: 100%;
+  height: 100%;
+}
+
+.text_box {
+  width: 100%;
+  height: 40rpx;
+  margin-top: 20rpx;
+  display: flex;
+
+}
+
+.text_box image {
+  width: 120rpx;
+  height: 40rpx;
+}
+
+.tite_con {
+  margin-left: 15rpx;
+  font-size: 30rpx;
+  width: 250rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.auther {
+  margin-top: 15rpx;
+  width: 9  0%;
+  height: 45rpx;
+  display: flex;
+  
+}
+.aunt_box{
+  width: 120rpx;
+  display: flex;
+  
+}
+.auther image {
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 50%;
+  margin-left: 5rpx;
+}
+.Horizontal {
+  width: 100%;
+  height: 30rpx;
+  background-color: #F4F4F4;
+}
+.auth_name {
+  width: 60rpx;
+  margin-left: 10rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dibu_tetx {
+  margin-top: 6rpx;
+  width: 100%;
+  height: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.one_text,
+.two_text {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 23rpx;
+}
+
+.two_text {
+  display: flex;
+}
+
+.num_people {
+  color: #ff5900;
+}
+.teacher_know{
+  width: 100%;
+  padding: 30rpx 15px;
+  box-sizing: border-box;
+}
+.teacher_tit{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .026667rem solid #e6e6e6;
+}
